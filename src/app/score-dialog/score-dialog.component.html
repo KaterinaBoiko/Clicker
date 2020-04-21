@@ -1,0 +1,19 @@
+<p>Score:</p>
+<p *ngIf="!score">There are no records for now ((</p>
+<table *ngIf="score">
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Count</th>
+        <th>Timer</th>
+        <th>Date</th>
+    </tr>
+    <tr *ngFor="let record of score; let i = index">
+        <td>{{i + 1}}.</td>
+        <td>{{record.name}}</td>
+        <td>{{record.count}}</td>
+        <td>{{record.timer}}</td>
+        <td>{{record.date | date:'d.M.yyyy H:mm'}}</td>
+    </tr>
+</table>
+<button mat-button (click)="clearScore()">Clear</button>

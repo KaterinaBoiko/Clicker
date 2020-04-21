@@ -1,0 +1,3 @@
+<p class="label">What is your name?</p>
+<input #name placeholder="Your name" type="text">
+<button mat-button (click)="dialogRef.close(name.value)">OK</button>
