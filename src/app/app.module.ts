@@ -9,6 +9,7 @@ import { GetNameDialogComponent } from "./get-name-dialog/get-name-dialog.compon
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ScoreDialogComponent } from "./score-dialog/score-dialog.component";
 import { ChangeTimerDialogComponent } from "./change-timer-dialog/change-timer-dialog.component";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ChangeTimerDialogComponent } from "./change-timer-dialog/change-timer-d
     FormsModule,
     MatDialogModule,
     MatButtonModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
