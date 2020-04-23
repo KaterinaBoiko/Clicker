@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  border-radius: 5px;
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  border-right: 2px solid rgba(155, 154, 154, 0.705);
+  border-left: 2px solid rgba(155, 154, 154, 0.705);
+}

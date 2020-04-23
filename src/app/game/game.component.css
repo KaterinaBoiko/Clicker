@@ -1,0 +1,66 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  height: 100%;
+  border-radius: 5px;
+  border-right: 2px solid rgba(155, 154, 154, 0.705);
+  border-left: 2px solid rgba(155, 154, 154, 0.705);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  top: 10px;
+  align-items: center;
+}
+
+.menu>a {
+  color: black;
+}
+
+.menu>a:hover {
+  text-decoration: none;
+}
+
+.welcome {
+  font-size: 22px;
+}
+
+.buttonGame,
+.buttonAgain {
+  background-color: rgb(194, 25, 25);
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttonAgain {
+  background-color: rgb(54, 54, 54);
+}
+
+.counter {
+  margin: 10px 0;
+}
+
+.timer,
+.stop {
+  font-size: 23px;
+  margin: 10px 0;
+  text-align: center;
+  user-select: none;
+}

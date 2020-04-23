@@ -1,0 +1,7 @@
+<p class="label">Hello! This is clicker game.</p>
+<p *ngIf="!error">What is your name?</p>
+<p class="error" *ngIf="error">Please, enter your name.</p>
+<div class="auth">
+    <input [(ngModel)]="name" placeholder="Your name" type="text">
+    <button mat-button (click)="nameEntered()">OK</button>
+</div>

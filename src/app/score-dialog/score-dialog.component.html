@@ -12,8 +12,8 @@
         <td>{{i + 1}}.</td>
         <td>{{record.name}}</td>
         <td>{{record.count}}</td>
-        <td>{{record.timer}}</td>
-        <td>{{record.date | date:'d.M.yyyy H:mm'}}</td>
+        <td>0:{{ record.timer.toLocaleString('en-US', {minimumIntegerDigits: 2}) }}</td>
+        <td>{{record.date | date:'d.MM.yyyy H:mm'}}</td>
     </tr>
 </table>
 <button mat-button (click)="clearScore()">Clear</button>

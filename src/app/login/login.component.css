@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  border-radius: 5px;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  border-right: 2px solid rgba(155, 154, 154, 0.705);
+  border-left: 2px solid rgba(155, 154, 154, 0.705);
+}
+
+.label {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+  font-size: 20px;
+  padding-left: 10px;
+  font-family: 'Comic Neue', cursive;
+  position: relative;
+  border-radius: 4px;
+}
+
+button {
+  background-color: rgb(172, 172, 172);
+  height: 30px;
+  line-height: 30px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.error {
+  color: rgb(228, 0, 0);
+}

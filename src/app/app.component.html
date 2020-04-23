@@ -1,17 +1,1 @@
-<div class="wrapper">
-  <div class="menu">
-    <a href="javascript:;" (click)="openDialogScore()">Score</a>
-    <a href="javascript:;" (click)="openDialogChangeTimer()">Change timer</a>
-  </div>
-  <p class="welcome">Hello
-    <span *ngIf="name">, {{ name }}</span>
-    !
-  </p>
-  <div class="counter">You`ve clicked: <span>{{ clickCounter }}</span></div>
-  <button class="buttonGame" (click)="playClicker()" *ngIf="timer != 0">{{ buttonText.toUpperCase() }}</button>
-  <div class="timer" *ngIf="timer > 0"> {{ timer }} </div>
-  <div class="stop" *ngIf="timer == 0">
-    <p>Your time is out.</p>
-    <button class="buttonAgain" (click)="playAgain()">Play one more time</button>
-  </div>
-</div>
+<router-outlet></router-outlet>

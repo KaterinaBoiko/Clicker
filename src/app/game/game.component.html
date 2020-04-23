@@ -1,0 +1,17 @@
+<div class="menu">
+    <a href="javascript:;" (click)="openDialogScore()">Score</a>
+    <a href="javascript:;" (click)="openDialogChangeTimer()">Change timer</a>
+    <a routerLink="/login">Exit</a>
+</div>
+<p class="welcome">
+    Let`s start<span *ngIf="userName">, {{ userName }}</span>
+    !
+</p>
+<div class="counter">You`ve clicked: <span>{{ clickCounter }}</span></div>
+<button class="buttonGame" (click)="playClicker()" *ngIf="timer != 0">{{ buttonText.toUpperCase() }}</button>
+<div class="timer" *ngIf="timer > 0">
+    0:{{ timer.toLocaleString('en-US', {minimumIntegerDigits: 2}) }} </div>
+<div class="stop" *ngIf="timer == 0">
+    <p>Your time is out.</p>
+    <button class="buttonAgain" (click)="playAgain()">Play one more time</button>
+</div>
